@@ -3,5 +3,19 @@
     <string name="header_text">Art Expo</string>
     <string name="address">Castle Avenue,Clontarf, Dublin</string>
     <string name="phone">0899722424</string>
-    <string name="email">artexhihibition@artexpo.com</string>
+    <string name="email">artexhihibit@artexpo.com</string>
+    <string name="Art1">Scenery Sketch</string>
+    <string name="Art2">Room Sketch</string>
+    <string name="Art3">Music Sketch</string>
+    <string name="Art4">Boat Sketch</string>
+    <string name="artMessage">Please visit art exhibition to view handmade sketchings and win a lucky draw!!</string>
+    <string name="leftArrow">Left Arrow</string>
+    <string name="rightArrow">Right Arrow</string>
+    <string name="homeIcon">Home Icon</string>
+    <string name="phoneIcon">Phone Icon</string>
+    <string name="emailIcon">Email Icon</string>
+    <string name="paintPallete">Paint Pallete</string>
+    <string name="clockIcon">Clock Icon</string>
+    <string name="time">6:00PM to 9:00PM</string>
+
 </resources>

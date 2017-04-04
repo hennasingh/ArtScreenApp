@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="viewFlipHeight">300dp</dimen>
+    <dimen name="headerTextHeight">100dp</dimen>
+    <dimen name="headerTextSize">42sp</dimen>
+    <dimen name="linearContMarginBT">20dp</dimen>
+    <dimen name="linearContMarginLR">40dp</dimen>
+
+    <dimen name="iconHomeHeight">50dp</dimen>
+    <dimen name="iconHomeMarginTop">10dp</dimen>
+    <dimen name="homeTextSize">18sp</dimen>
+    <dimen name="homeTextMargTop">20dp</dimen>
+
+    <dimen name="iconClockHeight">35dp</dimen>
+    <dimen name="iconClockMarginTop">10dp</dimen>
+    <dimen name="clockTextMargTop">20dp</dimen>
+
+    <dimen name="iconPhoneHeight">50dp</dimen>
+    <dimen name="phoneMargTop">10dp</dimen>
+    <dimen name="phoneTextMargTop">25dp</dimen>
+
+    <dimen name="emailTextMargTop">20dp</dimen>
+    <dimen name="emailiconMargTop">10dp</dimen>
+    <dimen name="emailiconHeight">50dp</dimen>
+    <dimen name="emailTextMargBelow">20dp</dimen>
+
+    <dimen name="paintMarginR">30dp</dimen>
+    <dimen name="messageTextSize">22sp</dimen>
+    <dimen name="paintPalleteHW">50dp</dimen>
+    <dimen name="artMsgMarginLR">30dp</dimen>
+    <dimen name="artMsgMarginTop">10dp</dimen>
+
+
+
+</resources>

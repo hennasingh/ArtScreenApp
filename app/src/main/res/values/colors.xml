@@ -3,4 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="imageButBg">#ff99cc</color>
+    <color name="linearLandsContentBg">#1Aff6699</color>
+    <color name="headerTextColor">#ff0080</color>
+    <color name="homeTextColor">#ff4da6</color>
+    <color name="artMsgColor">#ff3333</color>
 </resources>

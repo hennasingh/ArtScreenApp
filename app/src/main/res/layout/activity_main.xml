@@ -7,37 +7,41 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <ViewFlipper
             android:id="@+id/artPics"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="@dimen/viewFlipHeight"
             android:layout_alignParentTop="true">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                android:src="@drawable/art1c" />
+                android:src="@drawable/art1c"
+                android:contentDescription="@string/Art1"/>
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                android:src="@drawable/art2c" />
+                android:src="@drawable/art2c"
+                android:contentDescription="@string/Art2"/>
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                android:src="@drawable/art3c" />
+                android:src="@drawable/art3c"
+                android:contentDescription="@string/Art3"/>
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                android:src="@drawable/art4c" />
+                android:src="@drawable/art4c"
+                android:contentDescription="@string/Art4"/>
 
         </ViewFlipper>
 
@@ -50,27 +54,34 @@
             <TextView
                 android:id="@+id/headerText"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="@dimen/headerTextHeight"
                 android:background="@drawable/textbg1"
                 android:gravity="center"
                 android:text="@string/header_text"
-                android:textSize="42sp" />
+                android:textColor="@color/headerTextColor"
+                android:fontFamily="monospace"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="@dimen/headerTextSize" />
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:background="#ffffcc"
+                android:background="@color/imageButBg"
                 android:onClick="previous"
-                android:src="@drawable/leftarrow" />
+                android:src="@drawable/leftarrow"
+                android:contentDescription="@string/leftArrow"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:background="#ffffcc"
+                android:background="@color/imageButBg"
                 android:onClick="next"
+                android:contentDescription="@string/rightArrow"
                 android:src="@drawable/rightarrow" />
 
         </RelativeLayout>
@@ -82,15 +93,43 @@
             android:layout_below="@id/headerLayout"
             android:background="@drawable/landscape2">
 
+              <TextView
+                android:id="@+id/artMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/artMessage"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/artMsgMarginLR"
+                android:layout_marginRight="@dimen/artMsgMarginLR"
+                  android:layout_marginTop="@dimen/artMsgMarginTop"
+                android:fontFamily="cursive"
+                  android:textStyle="bold"
+                  android:textColor="@color/artMsgColor"
+                android:textSize="@dimen/messageTextSize"/>
+
+            <ImageView
+                android:id="@+id/paintPallete"
+                android:layout_width="@dimen/paintPalleteHW"
+                android:layout_height="@dimen/paintPalleteHW"
+                android:src="@drawable/paint_pallete"
+                android:layout_below="@id/artMessage"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@string/paintPallete"
+                android:layout_marginRight="@dimen/paintMarginR"
+                android:layout_marginEnd="@dimen/paintMarginR"/>
+
             <LinearLayout
+                android:id="@+id/linearContentBg"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_below="@id/artMessage"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="20dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:layout_marginTop="20dp"
-                android:background="#1Aff6699"
+                android:layout_marginBottom="@dimen/linearContMarginBT"
+                android:layout_marginLeft="@dimen/linearContMarginLR"
+                android:layout_marginRight="@dimen/linearContMarginLR"
+                android:layout_marginTop="@dimen/linearContMarginBT"
+                android:background="@color/linearLandsContentBg"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -100,19 +139,22 @@
 
                     <ImageView
                         android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_height="@dimen/iconHomeHeight"
+                        android:layout_marginTop="@dimen/iconHomeMarginTop"
                         android:layout_weight="1"
+                        android:contentDescription="@string/homeIcon"
                         android:src="@drawable/home" />
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_weight="2"
+                        android:layout_marginTop="@dimen/homeTextMargTop"
+                        android:layout_weight="3"
+                        android:textColor="@color/homeTextColor"
                         android:fontFamily="monospace"
+                        android:textStyle="italic"
                         android:text="@string/address"
-                        android:textSize="16sp" />
+                        android:textSize="@dimen/homeTextSize" />
 
                 </LinearLayout>
 
@@ -123,19 +165,48 @@
 
                     <ImageView
                         android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_height="@dimen/iconClockHeight"
+                        android:layout_marginTop="@dimen/iconClockMarginTop"
                         android:layout_weight="1"
+                        android:contentDescription="@string/clockIcon"
+                        android:src="@drawable/clock" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/clockTextMargTop"
+                        android:layout_weight="3"
+                        android:textColor="@color/homeTextColor"
+                        android:fontFamily="monospace"
+                        android:textStyle="italic"
+                        android:text="@string/time"
+                        android:textSize="@dimen/homeTextSize" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/iconPhoneHeight"
+                        android:layout_marginTop="@dimen/phoneMargTop"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/phoneIcon"
                         android:src="@drawable/phone" />
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="25dp"
-                        android:layout_weight="2"
+                        android:layout_marginTop="@dimen/phoneTextMargTop"
+                        android:layout_weight="3"
                         android:fontFamily="monospace"
+                        android:textStyle="italic"
+                        android:textColor="@color/homeTextColor"
                         android:text="@string/phone"
-                        android:textSize="16sp" />
+                        android:textSize="@dimen/homeTextSize" />
 
                 </LinearLayout>
 
@@ -146,19 +217,22 @@
 
                     <ImageView
                         android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_height="@dimen/emailiconHeight"
+                        android:layout_marginTop="@dimen/emailiconMargTop"
                         android:layout_weight="1"
+                        android:contentDescription="@string/emailIcon"
                         android:src="@drawable/email" />
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="25dp"
-                        android:layout_weight="2"
+                        android:layout_marginTop="@dimen/emailTextMargTop"
+                        android:layout_weight="3"
+                        android:layout_marginBottom="@dimen/emailTextMargBelow"
                         android:fontFamily="monospace"
+                        android:textColor="@color/homeTextColor"
                         android:text="@string/email"
-                        android:textSize="16sp" />
+                        android:textSize="@dimen/homeTextSize" />
 
                 </LinearLayout>
 
