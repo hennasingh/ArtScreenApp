@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ArtScreenApp</string>
+    <string name="header_text">Art Expo</string>
+    <string name="address">Castle Avenue,Clontarf, Dublin</string>
+    <string name="phone">0899722424</string>
+    <string name="email">artexhihibition@artexpo.com</string>
 </resources>
