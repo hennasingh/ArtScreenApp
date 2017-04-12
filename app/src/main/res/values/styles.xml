@@ -8,4 +8,40 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Catalogue_ImageStyle">
+        <item name="android:layout_width">@dimen/CatalogImg_width</item>
+        <item name="android:layout_height">@dimen/CatalogImg_height</item>
+        <item name="android:layout_margin">@dimen/margin_medium</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="Card_Header_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textSize_cardHeader</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/catalog_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/padding_small</item>
+        <item name="android:paddingBottom">@dimen/padding_small</item>
+      </style>
+
+    <style name="CatalogLayoutStyle">
+        <item name="android:layout_marginTop">@dimen/margin_extra_large</item>
+        <item name="android:layout_marginLeft">@dimen/margin_extra_large</item>
+        <item name="android:layout_marginRight">@dimen/margin_extra_large</item>
+        <item name="android:layout_marginBottom">@dimen/margin_medium</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/Catalog_layoutHeight</item>
+    </style>
+
+    <style name="HorizontalScrollView_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fillViewport">true</item>
+        <item name="android:layout_marginRight">@dimen/margin_small</item>
+        <item name="android:layout_marginLeft">@dimen/margin_tiny</item>
+    </style>
+
 </resources>

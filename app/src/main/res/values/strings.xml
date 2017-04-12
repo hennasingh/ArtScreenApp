@@ -1,21 +1,26 @@
 <resources>
     <string name="app_name">ArtScreenApp</string>
-    <string name="header_text">Art Expo</string>
+    <string name="header_text">Art Lodge</string>
     <string name="address">Castle Avenue,Clontarf, Dublin</string>
     <string name="phone">0899722424</string>
-    <string name="email">artexhihibit@artexpo.com</string>
+    <string name="email">artlodge@art.com</string>
     <string name="Art1">Scenery Sketch</string>
     <string name="Art2">Room Sketch</string>
     <string name="Art3">Music Sketch</string>
     <string name="Art4">Boat Sketch</string>
-    <string name="artMessage">Please visit art exhibition to view handmade sketchings and win a lucky draw!!</string>
+    <string name="artMessage">Please visit our art store to view handmade sketchings, to buy everything crafty
+        and get a chance to meet our art experts by enrolling in our lucky draw every month!!</string>
     <string name="leftArrow">Left Arrow</string>
     <string name="rightArrow">Right Arrow</string>
     <string name="homeIcon">Home Icon</string>
     <string name="phoneIcon">Phone Icon</string>
     <string name="emailIcon">Email Icon</string>
-    <string name="paintPallete">Paint Pallete</string>
+    <string name="paintPallete">Paint Palete</string>
     <string name="clockIcon">Clock Icon</string>
-    <string name="time">6:00PM to 9:00PM</string>
+    <string name="time">Mon-Sat 1:00PM-9:00PM</string>
+    <string name="Img_ContentDescription">Art Supplies</string>
+    <string name="ArtSupplies">Catalogue</string>
+    <string name="Contact">Contact</string>
+    <string name="Thank_you">Thank You!</string>
 
 </resources>

@@ -18,30 +18,30 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/Art1"
                 android:scaleType="fitXY"
-                android:src="@drawable/art1c"
-                android:contentDescription="@string/Art1"/>
+                android:src="@drawable/art1c" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/Art2"
                 android:scaleType="fitXY"
-                android:src="@drawable/art2c"
-                android:contentDescription="@string/Art2"/>
+                android:src="@drawable/art2c" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/Art3"
                 android:scaleType="fitXY"
-                android:src="@drawable/art3c"
-                android:contentDescription="@string/Art3"/>
+                android:src="@drawable/art3c" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/Art4"
                 android:scaleType="fitXY"
-                android:src="@drawable/art4c"
-                android:contentDescription="@string/Art4"/>
+                android:src="@drawable/art4c" />
 
         </ViewFlipper>
 
@@ -56,32 +56,32 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/headerTextHeight"
                 android:background="@drawable/textbg1"
+                android:fontFamily="monospace"
                 android:gravity="center"
                 android:text="@string/header_text"
-                android:textColor="@color/headerTextColor"
-                android:fontFamily="monospace"
                 android:textAllCaps="true"
-                android:textStyle="bold"
-                android:textSize="@dimen/headerTextSize" />
+                android:textColor="@color/headerTextColor"
+                android:textSize="@dimen/headerTextSize"
+                android:textStyle="bold" />
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:background="@color/imageButBg"
+                android:contentDescription="@string/leftArrow"
                 android:onClick="previous"
-                android:src="@drawable/leftarrow"
-                android:contentDescription="@string/leftArrow"/>
+                android:src="@drawable/leftarrow" />
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:background="@color/imageButBg"
-                android:onClick="next"
                 android:contentDescription="@string/rightArrow"
+                android:onClick="next"
                 android:src="@drawable/rightarrow" />
 
         </RelativeLayout>
@@ -93,37 +93,87 @@
             android:layout_below="@id/headerLayout"
             android:background="@drawable/landscape2">
 
-              <TextView
+            <TextView
                 android:id="@+id/artMessage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/artMessage"
-                android:gravity="center_horizontal"
                 android:layout_marginLeft="@dimen/artMsgMarginLR"
                 android:layout_marginRight="@dimen/artMsgMarginLR"
-                  android:layout_marginTop="@dimen/artMsgMarginTop"
+                android:layout_marginTop="@dimen/artMsgMarginTop"
                 android:fontFamily="cursive"
-                  android:textStyle="bold"
-                  android:textColor="@color/artMsgColor"
-                android:textSize="@dimen/messageTextSize"/>
+                android:gravity="center_horizontal"
+                android:text="@string/artMessage"
+                android:textColor="@color/artMsgColor"
+                android:textSize="@dimen/messageTextSize"
+                android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/paintPallete"
-                android:layout_width="@dimen/paintPalleteHW"
-                android:layout_height="@dimen/paintPalleteHW"
-                android:src="@drawable/paint_pallete"
-                android:layout_below="@id/artMessage"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:contentDescription="@string/paintPallete"
-                android:layout_marginRight="@dimen/paintMarginR"
-                android:layout_marginEnd="@dimen/paintMarginR"/>
+
+            <RelativeLayout
+                android:id="@+id/CatalogLayout"
+                style="@style/CatalogLayoutStyle"
+                android:layout_below="@id/artMessage">
+
+
+                <TextView
+                    android:id="@+id/ArtSupplies"
+                    style="@style/Card_Header_Style"
+                    android:text="@string/ArtSupplies" />
+
+                <ImageView
+                    android:id="@+id/paintPallete"
+                    android:layout_width="@dimen/paintPalleteHW"
+                    android:layout_height="@dimen/paintPalleteHW"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="@dimen/paintMarginRB"
+                    android:layout_marginRight="@dimen/paintMarginRB"
+                    android:layout_marginBottom="@dimen/paintMarginRB"
+                    android:contentDescription="@string/paintPallete"
+                    android:src="@drawable/paint_pallete" />
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalscrollview"
+                    style="@style/HorizontalScrollView_Style"
+                    android:layout_below="@id/ArtSupplies">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            style="@style/Catalogue_ImageStyle"
+                            android:contentDescription="@string/Img_ContentDescription"
+                            android:src="@drawable/art_item1" />
+
+                        <ImageView
+                            style="@style/Catalogue_ImageStyle"
+                            android:contentDescription="@string/Img_ContentDescription"
+                            android:src="@drawable/art_item2" />
+
+                        <ImageView
+                            style="@style/Catalogue_ImageStyle"
+                            android:contentDescription="@string/Img_ContentDescription"
+                            android:src="@drawable/art_item3" />
+
+                        <ImageView
+                            style="@style/Catalogue_ImageStyle"
+                            android:contentDescription="@string/Img_ContentDescription"
+                            android:src="@drawable/art_item4" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
 
             <LinearLayout
                 android:id="@+id/linearContentBg"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@id/artMessage"
+                android:layout_below="@id/CatalogLayout"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="@dimen/linearContMarginBT"
                 android:layout_marginLeft="@dimen/linearContMarginLR"
@@ -131,6 +181,11 @@
                 android:layout_marginTop="@dimen/linearContMarginBT"
                 android:background="@color/linearLandsContentBg"
                 android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ArtContact"
+                    style="@style/Card_Header_Style"
+                    android:text="@string/Contact" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -150,11 +205,11 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/homeTextMargTop"
                         android:layout_weight="3"
-                        android:textColor="@color/homeTextColor"
                         android:fontFamily="monospace"
-                        android:textStyle="italic"
                         android:text="@string/address"
-                        android:textSize="@dimen/homeTextSize" />
+                        android:textColor="@color/headerTextColor"
+                        android:textSize="@dimen/homeTextSize"
+                        android:textStyle="italic" />
 
                 </LinearLayout>
 
@@ -176,11 +231,11 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/clockTextMargTop"
                         android:layout_weight="3"
-                        android:textColor="@color/homeTextColor"
                         android:fontFamily="monospace"
-                        android:textStyle="italic"
                         android:text="@string/time"
-                        android:textSize="@dimen/homeTextSize" />
+                        android:textColor="@color/headerTextColor"
+                        android:textSize="@dimen/homeTextSize"
+                        android:textStyle="italic" />
 
                 </LinearLayout>
 
@@ -203,10 +258,10 @@
                         android:layout_marginTop="@dimen/phoneTextMargTop"
                         android:layout_weight="3"
                         android:fontFamily="monospace"
-                        android:textStyle="italic"
-                        android:textColor="@color/homeTextColor"
                         android:text="@string/phone"
-                        android:textSize="@dimen/homeTextSize" />
+                        android:textColor="@color/headerTextColor"
+                        android:textSize="@dimen/homeTextSize"
+                        android:textStyle="italic" />
 
                 </LinearLayout>
 
@@ -226,12 +281,12 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/emailTextMargBelow"
                         android:layout_marginTop="@dimen/emailTextMargTop"
                         android:layout_weight="3"
-                        android:layout_marginBottom="@dimen/emailTextMargBelow"
                         android:fontFamily="monospace"
-                        android:textColor="@color/homeTextColor"
                         android:text="@string/email"
+                        android:textColor="@color/headerTextColor"
                         android:textSize="@dimen/homeTextSize" />
 
                 </LinearLayout>
@@ -239,8 +294,29 @@
 
             </LinearLayout>
 
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:layout_below="@id/linearContentBg"
+                android:background="@color/homeTextColor"
+                android:layout_marginRight="@dimen/divider_marginRL"
+                android:layout_marginLeft="@dimen/divider_marginRL"
+                ></View>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Thank_you"
+                android:layout_below="@id/divider"
+                android:gravity="center"
+                android:textSize="@dimen/thank_text_size"
+                android:textColor="@color/homeTextColor"
+                android:padding="@dimen/thank_padding"
+                />
 
         </RelativeLayout>
+
+
 
     </RelativeLayout>
 

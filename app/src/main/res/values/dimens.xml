@@ -25,11 +25,30 @@
     <dimen name="emailiconHeight">50dp</dimen>
     <dimen name="emailTextMargBelow">20dp</dimen>
 
-    <dimen name="paintMarginR">30dp</dimen>
+    <dimen name="paintMarginRB">12dp</dimen>
     <dimen name="messageTextSize">22sp</dimen>
     <dimen name="paintPalleteHW">50dp</dimen>
-    <dimen name="artMsgMarginLR">30dp</dimen>
+    <dimen name="artMsgMarginLR">20dp</dimen>
     <dimen name="artMsgMarginTop">10dp</dimen>
+
+    <dimen name="CatalogImg_width">250dp</dimen>
+    <dimen name="CatalogImg_height">300dp</dimen>
+    <dimen name="catalogue_margin">10dp</dimen>
+    <dimen name="catalogue_img_margin">15dp</dimen>
+    <dimen name="padding_small">6dp</dimen>
+    <dimen name="textSize_cardHeader">22sp</dimen>
+    <dimen name="margin_tiny">2dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">10dp</dimen>
+    <dimen name="margin_large">8dp</dimen>
+    <dimen name="margin_extra_large">40dp</dimen>
+    <dimen name="Catalog_layoutHeight">300dp</dimen>
+
+    <dimen name="divider_height">2dp</dimen>
+    <dimen name="divider_marginRL">30dp</dimen>
+    <dimen name="thank_text_size">16sp</dimen>
+    <dimen name="thank_padding">8dp</dimen>
+
 
 
 
