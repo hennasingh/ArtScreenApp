@@ -3,13 +3,13 @@
     <string name="header_text">Art Lodge</string>
     <string name="address">Castle Avenue,Clontarf, Dublin</string>
     <string name="phone">0899722424</string>
-    <string name="email">artlodge@art.com</string>
+    <string name="email">art@artlodge.com</string>
     <string name="Art1">Scenery Sketch</string>
     <string name="Art2">Room Sketch</string>
     <string name="Art3">Music Sketch</string>
     <string name="Art4">Boat Sketch</string>
     <string name="artMessage">Please visit our art store to view handmade sketchings, to buy everything crafty
-        and get a chance to meet our art experts by enrolling in our lucky draw every month!!</string>
+        and get a chance to learn sketching from our art experts by enrolling in our lucky draw every month!!</string>
     <string name="leftArrow">Left Arrow</string>
     <string name="rightArrow">Right Arrow</string>
     <string name="homeIcon">Home Icon</string>
